@@ -31,31 +31,31 @@
                     <!-- Get the first name -->
                     <div class="mb-3">
                         <label for="name-type" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="first-name" name="first-name"
+                        <input type="text" class="form-control" id="firstName" name="first-name"
                             placeholder="Enter first name" required />
                     </div>
                     <!-- Get the last name -->
                     <div class="mb-3">
                         <label for="name-type" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="last-name" name="last-name"
+                        <input type="text" class="form-control" id="lastName" name="last-name"
                             placeholder="Enter last name" required />
                     </div>
                     <!-- Get the name type -->
                     <div class="mb-3">
                         <label for="name-type" class="form-label"> Favorite color</label>
-                        <input type="text" class="form-control" id="favorite-color" name="favorite-color"
+                        <input type="text" class="form-control" id="favoriteColor" name="favorite-color"
                             placeholder="Enter favorite color" required />
                     </div>
                     <!-- Get the name type -->
                     <div class="mb-3">
                         <label for="name-type" class="form-label">Favorite animal</label>
-                        <input type="text" class="form-control" id="favorite-animal" name="favorite-animal"
+                        <input type="text" class="form-control" id="favoriteAnimal" name="favorite-animal"
                             placeholder="Enter favorite animal" required />
                     </div>
                     <!-- Get favorite color -->
                     <div class="mb-3">
                         <label for="name-type" class="form-label">Favorite color</label>
-                        <input type="text" class="form-control" id="favorite-color" name="favorite-color"
+                        <input type="text" class="form-control" id="favoriteColor" name="favorite-color"
                             placeholder="Enter favorite color" required />
 
                         <!-- Get road type-->
@@ -73,7 +73,8 @@
                     </div>
                     <!-- Button to generate a random name -->
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary" id="generate-name">Generate Name</button>
+                         <!-- Change button to a div-->
+                        <div class="btn btn-primary w-100" id="generate-name" onclick="generateFullName()">Generate Name</div>
                     </div>
                 </form>
                 <!-- Display the generated name -->
