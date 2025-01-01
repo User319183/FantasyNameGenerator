@@ -9,7 +9,9 @@
     <!-- Bootstrap CSS v5.3.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -19,34 +21,41 @@
     </header>
     <main>
         <div class="container mt-5">
+            <!-- Instructions Alert -->
             <div class="alert alert-info text-center">
                 <h4>How to Use</h4>
                 <p>Enter your first name, last name, favorite color, and other details into the form.</p>
                 <p>Choose an option from the dropdown menu.</p>
                 <p>Click the 'Generate Name' button to see your fantasy name!</p>
             </div>
+            <!-- Form Card -->
             <div class="card shadow-lg p-4">
                 <form id="fantasy-form">
+                    <!-- First Name Input -->
                     <div class="mb-3">
                         <label for="firstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="firstName" name="first-name"
                             placeholder="Enter first name" required />
                     </div>
+                    <!-- Last Name Input -->
                     <div class="mb-3">
                         <label for="lastName" class="form-label">Last Name</label>
                         <input type="text" class="form-control" id="lastName" name="last-name"
                             placeholder="Enter last name" required />
                     </div>
+                    <!-- Favorite Color Input -->
                     <div class="mb-3">
                         <label for="favoriteColor" class="form-label">Favorite Color</label>
                         <input type="text" class="form-control" id="favoriteColor" name="favorite-color"
                             placeholder="Enter favorite color" required />
                     </div>
+                    <!-- Favorite Animal Input -->
                     <div class="mb-3">
                         <label for="favoriteAnimal" class="form-label">Favorite Animal</label>
                         <input type="text" class="form-control" id="favoriteAnimal" name="favorite-animal"
                             placeholder="Enter favorite animal" required />
                     </div>
+                    <!-- Road Type Dropdown -->
                     <div class="mb-3">
                         <label for="roadType" class="form-label">Road Type</label>
                         <select class="form-select" id="roadType" name="roadType" required>
@@ -58,12 +67,14 @@
                             <option value="other">Other</option>
                         </select>
                     </div>
+                    <!-- Buttons -->
                     <div class="text-center">
                         <button type="button" class="btn btn-primary w-100 mb-2" id="generate-name"
                             onclick="generateFullName()">Generate Name</button>
                         <button type="reset" class="btn btn-secondary w-100">Reset</button>
                     </div>
                 </form>
+                <!-- Generated Name Display -->
                 <div class="text-center mt-4">
                     <h2>Generated Name</h2>
                     <p id="generated-name" class="display-4 text-success"></p>
@@ -81,6 +92,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
     <script src="script.js"></script>
 </body>
 
