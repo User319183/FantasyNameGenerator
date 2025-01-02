@@ -77,9 +77,13 @@ const generateFullName = () => {
 
 	const fullName = `${prefix} ${first} ${middle} ${last} ${suffix}`;
 	document.getElementById("generated-name").textContent = fullName;
+
+	// * Remove the hidden class from the generated name title when the name is generated
+	document.querySelector(".generated-name-title").classList.remove("hidden");
 };
 
 // * Event listener for the form submission
 document.getElementById("fantasy-form").addEventListener("reset", () => {
 	document.getElementById("generated-name").textContent = "";
+	document.querySelector(".generated-name-title").classList.add("hidden");
 });
